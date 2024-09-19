@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Exo 2", sans-serif; 
+}
+header{
+    width: 100%;
+    height: 100%;
+    background: url("../img/Inicio/Inicio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Apuntamos a la barra de navegacion que esta dentro de header */
+header nav{
+    display: flex;
+    justify-content: center; /* Centra todos los elementos */
+    align-items: center;
+    background-color: #000;
+    padding: 10px;
+    display: flex;
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;
+}
+/*aca ajustar altura de la varra activa*/
+header ul a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 20px;
+}
+header ul a:hover{
+    color: #00b29a;
+}
+#hero{
+    /*background-color:  rgba(0, 0, 0, 0.363) ;*/
+    text-align: center;
+    margin-top: 100px;
+}
+#hero h2{
+    color: #610094;
+    font-size: 60px;
+}
+#hero h1{
+    color:#005B41;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+#hero button{
+    background-color: #3F0071;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 50px ;
+}
+#hero button:hover{
+    background-color: #005B41;
+    
+    transform: scale(1.10);
+}
+main{
+    width: 100%;
+    position: relative;
+}
+/*Parte de categorias*/
+#Categorias{
+    width: 100%;
+    height: 100%;
+    padding: 40px 0;
+    text-align: center;
+    background: url("../img/Categoria/");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    background-color: #000000;
+}
+#Categorias h2{
+    font-size: 50px;
+    color: #ffffff;
+}
+#Categorias a{
+    margin-top: 35px;
+    font-size: 35px;
+    color: #ffffff;
+}
+#Categorias p{
+    margin-top: 20px;
+    font-size: 22px;
+    color: #ffffff;
+}
+#Categorias .fila{
+    display: flex;
+    justify-content: baseline;
+    margin-top: 50px;
+}
+#Categorias article{
+    margin: 0 40px;
+    position: relative;
+}
+#Categorias article h3{
+    position:center;
+    z-index: 10;
+    top: 100px;
+    width: 100%;
+    font-size: 40px;
+    color: #3F0071;
+    cursor: pointer;
+}
+#Categorias article h3:hover{
+    color: #008170;
+}
+/*Parte de Plataformas*/
+#Plataformas{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background: url("../img/Plataformas/Imagen\ Oferta.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+#Plataformas article img {
+    width: 100%;
+    height: 370px;;
+    width: 370px;
+}
+#Plataformas h2{
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+}
+#Plataformas p{
+    font-size: 35px;
+    
+    color: #008170;
+}
+#Plataformas a{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+#Plataformas .fila{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap:  wrap;
+}
+#Plataformas article{
+    margin: 0 20px;
+    position: relative;
+    width: 30%;
+}
+#Plataformas article h3{
+    position: absolute;
+    z-index: 10;
+    top: 155px;
+    width: 100%;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+}
+/*Parte de Ofertas*/
+#Ofertas{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
+    position: relative;
+    height: auto;
+}
+#Ofertas h2{
+    font-size: 50px;
+    color: #ffffff;
+}
+#Ofertas p{
+    font-size: 25px; 
+    color: #ffffff;   
+}
+#Ofertas .fila1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;   
+}
+#Ofertas article{
+    margin: 0 40px;
+    position: relative;
+}
+#Ofertas article h3{
+    position:absolute;
+    z-index: 9;
+    top: 100px;
+    width: 100%;
+    color: #00FF85;  
+    cursor: pointer;
+}
+#Ofertas article h3:hover{
+    transform: scale(1.05);
+}
+#Ofertas p:hover{
+    color: #00b29a;
+}
+#Ofertas button{
+    background-color:#150050;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#Ofertas button:hover {
+    background-color:#610094;
+    color: black;
+}
+/*Parte de Top juegos*/
+#Topjuegos{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background: url("../img/Top\ juegos/");
+    background-size: cover;
+    background-position: center;
+    background-color: #232D3F;
+}
+#Topjuegos h2{
+    font-size: 50px;
+}
+#Topjuegos p{
+    font-size: 30px;
+}
+#Topjuegos .fila1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+#Topjuegos article{
+    margin: 0 40px;
+    position: relative;
+}
+/*Parte de Compra*/
+#Compras{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background: url("../img/Top\ juegos/");
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
+}
+#Compras h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ffffff;
+}
+#Compras .fila {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+#Compras article {
+    background-color: #232D3F;
+    padding: 20px;
+    border-radius: 10%;
+    text-align: center;
+    transition: transform 0.5s;
+}
+#Compras article img {
+    width: 100%;
+    /*border-radius: 50px;*/
+    margin-bottom: 10px;
+}
+#Compras article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#Compras .precio {
+    margin-bottom: 15px;
+}
+#Compras .precio p {
+    font-size: 1.2em;
+    color:#00b29a;
+}
+#Compras button {
+    background-color:#150050;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#Compras button:hover {
+    background-color:#610094;
+    transform: scale(1.10);
+}
+/*Parte final*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background: url("../img/Inicio/Fin.png");
+    color: white;
+}
+footer h2{
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+footer p{
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
